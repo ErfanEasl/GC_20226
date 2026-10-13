@@ -6,8 +6,12 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public PlayerHealth health;
     public Transform player;
     public Rigidbody2D bulletRb;
+    public float maxStamina = 10f;
+    public float currentStamina;
+    public float staminDrain = 1f;
     public float shootPower = 5f;
     public float playerSpeed = 5;
     float returnSpeedBost = 2;
@@ -24,6 +28,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         lightPlace = transform.localPosition;
+        currentStamina = maxStamina;
     }
 
     // Update is called once per frame
@@ -33,6 +38,9 @@ public class Bullet : MonoBehaviour
         {
             transform.SetParent(null);
             isShot = true;
+
+            isReturning = false;
+            isStopped = false;
             float yRocation = player.eulerAngles.y;
             if (yRocation < 90f || yRocation > 270f)
             {
@@ -73,6 +81,12 @@ public class Bullet : MonoBehaviour
                 transform.SetParent(player);
                 transform.localPosition = lightPlace;
 
+                if(currentStamina<= 0)
+                {
+                    health.TakeDamage(1);
+                }
+
+                currentStamina = maxStamina;
                 isShot = false;
                 isStopped = false;
                 isReturning = false;
@@ -82,11 +96,20 @@ public class Bullet : MonoBehaviour
         else if (!isStopped)
         {
             bulletRb.velocity = Vector2.MoveTowards(bulletRb.velocity, Vector2.zero, slowDown * Time.fixedDeltaTime);
+            if (bulletRb.velocity.magnitude < 0.05f)
+            {
+                bulletRb.velocity = Vector2.zero;
+                isStopped = true;
+            }
         }
-        if (bulletRb.velocity.magnitude < 0.05f)
+        if (isStopped)
         {
-            bulletRb.velocity = Vector2.zero;
-            isStopped = true;
+            currentStamina -= staminDrain * Time.fixedDeltaTime;
+            currentStamina = Mathf.Max(currentStamina, 0f);
+        }
+        if(currentStamina<=0)
+        {
+            isReturning = true;
         }
     }
 }
