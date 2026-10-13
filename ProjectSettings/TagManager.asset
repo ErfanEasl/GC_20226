@@ -62,9 +62,9 @@ TagManager:
   - name: 7backgound
     uniqueID: 1472332901
     locked: 0
-  - name: Player
-    uniqueID: 3188527379
-    locked: 0
   - name: 8backgound
     uniqueID: 2931162873
+    locked: 0
+  - name: Player
+    uniqueID: 3188527379
     locked: 0
