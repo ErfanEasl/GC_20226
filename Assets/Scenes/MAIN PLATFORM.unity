@@ -1869,7 +1869,7 @@ Transform:
   m_GameObject: {fileID: 1065144594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.7, y: -17.1, z: -0.0244}
-  m_LocalScale: {x: 7.0093555, y: 5.9314227, z: 3.3058}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 289533515}
@@ -1910,18 +1910,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013972729, y: -0.026020765}
+  m_Offset: {x: -0.04699707, y: -0.83896756}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.94512194, y: 1.7138331}
+    oldSize: {x: 4.84375, y: 8.783395}
     newSize: {x: 0.94512194, y: 1.7138331}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.663765, y: 1.5609517}
+  m_Size: {x: 2.8180733, y: 6.4386325}
   m_EdgeRadius: 0
 --- !u!114 &1065144600
 MonoBehaviour:
@@ -1938,12 +1938,12 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 64
-  boxSize: {x: 0.6, y: 0.3}
-  Distance: 0.7
+  boxSize: {x: 2.2, y: 0.85}
+  Distance: 4
   rb: {fileID: 1065144598}
   animator: {fileID: 1065144595}
-  moveSpeed: 10
-  jumpPwer: 8
+  moveSpeed: 20
+  jumpPwer: 12
 --- !u!1 &1100089214
 GameObject:
   m_ObjectHideFlags: 0
