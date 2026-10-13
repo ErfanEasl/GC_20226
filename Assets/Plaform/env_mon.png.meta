@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -4694,8 +4694,8 @@ TextureImporter:
       env_mon_93: -1414536160
       env_mon_215: -1621952415
       env_mon_168: 562394051
-      env_mon_32: 1788267118
       env_mon_209: -1969484925
+      env_mon_32: 1788267118
       env_mon_157: -310166514
       env_mon_75: 1586353797
       env_mon_92: 1036858505
@@ -4819,16 +4819,16 @@ TextureImporter:
       env_mon_133: -1126642716
       env_mon_14: 1154550845
       env_mon_108: 117798088
-      env_mon_150: 1766736765
-      env_mon_152: 1321223182
-      env_mon_148: 1834850562
       env_mon_206: -979671218
+      env_mon_150: 1766736765
+      env_mon_148: 1834850562
       env_mon_5: -1033673254
       env_mon_12: -978154369
       env_mon_128: -776281104
       env_mon_177: 1209517790
       env_mon_151: 663930120
       env_mon_127: -306139304
+      env_mon_152: 1321223182
       env_mon_18: -384269
       env_mon_90: 1278219802
       env_mon_2: -689279956

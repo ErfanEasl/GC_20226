@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1013,12 +1013,9 @@ TextureImporter:
     nameFileIdTable:
       env_ground_34: 875192455
       env_ground_23: -2129756615
-      env_ground_35: 721361693
+      env_ground_39: 1401708072
       env_ground_4: -1051434460
       env_ground_19: 2098565260
-      env_ground_39: 1401708072
-      env_ground_36: -1511454320
-      env_ground_38: 1138721456
       env_ground_40: -791914515
       env_ground_1: -1022381469
       env_ground_0: -1210691350
@@ -1043,14 +1040,17 @@ TextureImporter:
       env_ground_16: -935418216
       env_ground_5: -1240981885
       env_ground_27: -13729892
-      env_ground_15: 1027998743
+      env_ground_35: 721361693
+      env_ground_38: 1138721456
       env_ground_20: 1021824384
-      env_ground_9: -374465575
+      env_ground_15: 1027998743
       env_ground_30: -465888826
-      env_ground_41: -855391443
+      env_ground_9: -374465575
       env_ground_31: 1954496120
+      env_ground_41: -855391443
       env_ground_8: 1553877120
       env_ground_24: 2135834006
+      env_ground_36: -1511454320
       env_ground_10: 270008686
       env_ground_12: 673995721
   spritePackingTag: 

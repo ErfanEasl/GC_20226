@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -5293,16 +5293,16 @@ TextureImporter:
       env_rock_136: -626804426
       env_rock_62: -186362224
       env_rock_11: -933867634
-      env_rock_77: -1399421303
       env_rock_86: 954616354
+      env_rock_178: -535446433
       env_rock_54: -2115766352
+      env_rock_77: -1399421303
       env_rock_128: 1174236407
       env_rock_22: -194076783
       env_rock_90: -745526401
       env_rock_100: 314402496
-      env_rock_178: -535446433
-      env_rock_170: -483715616
       env_rock_230: -423512374
+      env_rock_170: -483715616
       env_rock_34: -861428875
       env_rock_154: -2138846012
       env_rock_19: -2079759831
@@ -5330,9 +5330,9 @@ TextureImporter:
       env_rock_3: 1196983456
       env_rock_183: -1801762724
       env_rock_97: -1193304605
+      env_rock_200: -1225461604
       env_rock_31: -1018940162
       env_rock_197: 1370541229
-      env_rock_200: -1225461604
       env_rock_18: 239889601
       env_rock_88: -1200040403
       env_rock_116: -450169542
@@ -5354,12 +5354,12 @@ TextureImporter:
       env_rock_32: -836323898
       env_rock_46: 1948424509
       env_rock_39: -1704040487
-      env_rock_84: 1636741293
       env_rock_142: 1636966292
+      env_rock_206: 840503867
       env_rock_122: 1436203809
       env_rock_1: -1576667669
       env_rock_131: -1820700675
-      env_rock_206: 840503867
+      env_rock_84: 1636741293
       env_rock_12: -112634163
       env_rock_168: -920540459
       env_rock_194: -1615817202
@@ -5371,8 +5371,8 @@ TextureImporter:
       env_rock_79: 239214612
       env_rock_179: 96924134
       env_rock_9: -1039926062
-      env_rock_145: 1835206494
       env_rock_193: -393133182
+      env_rock_145: 1835206494
       env_rock_103: 1707568937
       env_rock_41: -794698178
       env_rock_182: -162557277
