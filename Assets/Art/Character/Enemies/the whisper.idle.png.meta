@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 160
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: the whisper.idle_0
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 2916
+        width: 1143
+        height: 2504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c85c052faedda14a90f24e04362c08a
+      internalID: 1668828793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the whisper.idle_1
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 2912
+        width: 1309
+        height: 2526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b518704a4e5d3f41853c03cd75262b6
+      internalID: -1753693270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the whisper.idle_2
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 2905
+        width: 1503
+        height: 2537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0694aa246c9bd1b4fb2ee86611295b6d
+      internalID: -1910474868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the whisper.idle_3
+      rect:
+        serializedVersion: 2
+        x: 5044
+        y: 2909
+        width: 1704
+        height: 2557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd211350a39aac542b99b8dc74f32248
+      internalID: 444527446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the whisper.idle_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 79
+        width: 1704
+        height: 2558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec303fd83ba9b74468aebcf7b9763976
+      internalID: 1072058944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the whisper.idle_5
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 48
+        width: 1503
+        height: 2538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d347d2f13849124b9af240e33af36e6
+      internalID: 1051706765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the whisper.idle_6
+      rect:
+        serializedVersion: 2
+        x: 3760
+        y: 51
+        width: 1312
+        height: 2526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc8c1cc4715b924ea9e0f76dfa459df
+      internalID: 1261668146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the whisper.idle_7
+      rect:
+        serializedVersion: 2
+        x: 5174
+        y: 65
+        width: 1143
+        height: 2505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9991b6fa3db8ca747aac19b62dc21328
+      internalID: -414015561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +296,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      the whisper.idle_1: -1753693270
+      the whisper.idle_6: 1261668146
+      the whisper.idle_5: 1051706765
+      the whisper.idle_4: 1072058944
+      the whisper.idle_0: 1668828793
+      the whisper.idle_3: 444527446
+      the whisper.idle_7: -414015561
+      the whisper.idle_2: -1910474868
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
