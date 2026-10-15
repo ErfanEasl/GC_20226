@@ -122,10 +122,10 @@ TextureImporter:
       name: the whisper.walk_0
       rect:
         serializedVersion: 2
-        x: 400
-        y: 3622
-        width: 1401
-        height: 3017
+        x: 371
+        y: 4203
+        width: 1435
+        height: 3091
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,8 +133,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58d8af48189661e40a51097a66ee93c9
-      internalID: -123803514
+      spriteID: fe523a8c91f95e240b6ba0fb8ea9ec93
+      internalID: 62747698
       vertices: []
       indices: 
       edges: []
@@ -143,10 +143,10 @@ TextureImporter:
       name: the whisper.walk_1
       rect:
         serializedVersion: 2
-        x: 2129
-        y: 3608
-        width: 1348
-        height: 3063
+        x: 2099
+        y: 4203
+        width: 1398
+        height: 3122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23d57525f12d5f44386d0fe26d894378
-      internalID: -24468548
+      spriteID: 486248ecabae40b4988bffdc1ab2e1e3
+      internalID: -437653230
       vertices: []
       indices: 
       edges: []
@@ -164,10 +164,10 @@ TextureImporter:
       name: the whisper.walk_2
       rect:
         serializedVersion: 2
-        x: 3848
-        y: 3615
-        width: 1199
-        height: 3067
+        x: 3805
+        y: 4207
+        width: 1276
+        height: 3118
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,8 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2c871d3c5024bb4498880f4d6b23999
-      internalID: 962145686
+      spriteID: b951926acea16c84f9f0db1aaaf5314b
+      internalID: 1983485122
       vertices: []
       indices: 
       edges: []
@@ -185,10 +185,10 @@ TextureImporter:
       name: the whisper.walk_3
       rect:
         serializedVersion: 2
-        x: 5471
-        y: 3566
-        width: 1344
-        height: 3116
+        x: 5453
+        y: 4164
+        width: 1383
+        height: 3182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,8 +196,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d47099cb797663243b5b52a56c5997d3
-      internalID: 605180695
+      spriteID: 63047b5f523c43f48ab3096a59dfc7db
+      internalID: -623705186
       vertices: []
       indices: 
       edges: []
@@ -206,10 +206,10 @@ TextureImporter:
       name: the whisper.walk_4
       rect:
         serializedVersion: 2
-        x: 3234
-        y: 3563
-        width: 10
-        height: 10
+        x: 377
+        y: 764
+        width: 1376
+        height: 3169
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,8 +217,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28b9db58f3559de4ba1c88b7df4a1ff7
-      internalID: -711617729
+      spriteID: 361fc5d5988820944a8fae350f5f7f3a
+      internalID: -1441720550
       vertices: []
       indices: 
       edges: []
@@ -227,10 +227,10 @@ TextureImporter:
       name: the whisper.walk_5
       rect:
         serializedVersion: 2
-        x: 390
-        y: 168
-        width: 1344
-        height: 3112
+        x: 2055
+        y: 707
+        width: 1219
+        height: 3154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,8 +238,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb0cfc2c229478c4c8af1b8c20f700d4
-      internalID: -144497776
+      spriteID: b59cb15d93dafd943992af3cca2fffb8
+      internalID: 1319425909
       vertices: []
       indices: 
       edges: []
@@ -248,10 +248,10 @@ TextureImporter:
       name: the whisper.walk_6
       rect:
         serializedVersion: 2
-        x: 2085
-        y: 132
-        width: 1202
-        height: 3070
+        x: 3560
+        y: 592
+        width: 1377
+        height: 3226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,8 +259,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03a3647d67ecab8498fb719dfbfa9f8a
-      internalID: -179003612
+      spriteID: 2b4d1c212a85f4349a62c8c209d6ce38
+      internalID: 1666646205
       vertices: []
       indices: 
       edges: []
@@ -269,10 +269,10 @@ TextureImporter:
       name: the whisper.walk_7
       rect:
         serializedVersion: 2
-        x: 3583
-        y: 86
-        width: 1346
-        height: 3066
+        x: 5124
+        y: 721
+        width: 1440
+        height: 3104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,50 +280,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7be156b486fb4448a9357ae98174e5b
-      internalID: 65423310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: the whisper.walk_8
-      rect:
-        serializedVersion: 2
-        x: 5132
-        y: 164
-        width: 1401
-        height: 3017
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b1bf917de0d5db4c87ec9b07048a9fe
-      internalID: -474623327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: the whisper.walk_9
-      rect:
-        serializedVersion: 2
-        x: 4688
-        y: 41
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b74760d70d12bb4c947c11b3382125b
-      internalID: -93198032
+      spriteID: e8fca540d66e6c44ea8bc9c99b44e1ff
+      internalID: -1560637244
       vertices: []
       indices: 
       edges: []
@@ -339,16 +297,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      the whisper.walk_6: -179003612
-      the whisper.walk_4: -711617729
-      the whisper.walk_7: 65423310
-      the whisper.walk_0: -123803514
-      the whisper.walk_1: -24468548
-      the whisper.walk_9: -93198032
-      the whisper.walk_2: 962145686
-      the whisper.walk_8: -474623327
-      the whisper.walk_5: -144497776
-      the whisper.walk_3: 605180695
+      the whisper.walk_6: 1666646205
+      the whisper.walk_4: -1441720550
+      the whisper.walk_7: -1560637244
+      the whisper.walk_0: 62747698
+      the whisper.walk_1: -437653230
+      the whisper.walk_2: 1983485122
+      the whisper.walk_5: 1319425909
+      the whisper.walk_3: -623705186
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
