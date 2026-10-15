@@ -117,7 +117,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Run.mc.amime_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 748
+        width: 341
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026fad3fd854b9d43be47dfc8a552ce0
+      internalID: 792315802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run.mc.amime_1
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 770
+        width: 338
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf41ae928052884288c7bbd96a2ac25
+      internalID: 970472566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run.mc.amime_2
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 783
+        width: 320
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5567e3b7a9ca2054f9443a43368ac8df
+      internalID: -459124749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run.mc.amime_3
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 783
+        width: 318
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626b1fdc8b3156e4291ee87b9ecd0265
+      internalID: 959353269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run.mc.amime_4
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 766
+        width: 339
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473c2de77b718fc49ac8e798e77ca285
+      internalID: -339326728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run.mc.amime_5
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 761
+        width: 344
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469023ee784c9f948a55353e61333a61
+      internalID: 182152773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run.mc.amime_6
+      rect:
+        serializedVersion: 2
+        x: 2374
+        y: 777
+        width: 351
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28dcfb28436f2834aa683bf46c128ea4
+      internalID: -4343158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run.mc.amime_7
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 766
+        width: 339
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d32c305aeb897f46997da372a88c0ee
+      internalID: 1059196179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +296,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Run.mc.amime_0: 792315802
+      Run.mc.amime_3: 959353269
+      Run.mc.amime_6: -4343158
+      Run.mc.amime_1: 970472566
+      Run.mc.amime_7: 1059196179
+      Run.mc.amime_5: 182152773
+      Run.mc.amime_4: -339326728
+      Run.mc.amime_2: -459124749
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

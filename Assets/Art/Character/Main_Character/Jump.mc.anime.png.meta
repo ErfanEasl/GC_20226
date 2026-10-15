@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Jump.mc.anime_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 814
+        width: 252
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe356e227a7e3d46a7fac8d260f328d
+      internalID: -125341224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump.mc.anime_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 862
+        width: 280
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693251dd983199e4fbf5ba5837d2cf43
+      internalID: 1941365367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump.mc.anime_2
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 938
+        width: 308
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736f9491aba663840b2b5aa9ce372b4b
+      internalID: -166285371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump.mc.anime_3
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1037
+        width: 278
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d81e27736642a40b2c40b5cba72dbe
+      internalID: -321965016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump.mc.anime_4
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 1108
+        width: 358
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a308ee9ace41148bbc2b42e9cb6c44
+      internalID: -95552669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump.mc.anime_5
+      rect:
+        serializedVersion: 2
+        x: 2037
+        y: 1008
+        width: 285
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c296c9f72cd2040a51378da1293f01
+      internalID: 1307413699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump.mc.anime_6
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 869
+        width: 290
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3043d0a27ef106f46ad79147df82e394
+      internalID: -1876675757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump.mc.anime_7
+      rect:
+        serializedVersion: 2
+        x: 2808
+        y: 799
+        width: 300
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412c82154e8df444b8aabe3d93f69011
+      internalID: 392644950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +296,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Jump.mc.anime_6: -1876675757
+      Jump.mc.anime_3: -321965016
+      Jump.mc.anime_1: 1941365367
+      Jump.mc.anime_2: -166285371
+      Jump.mc.anime_0: -125341224
+      Jump.mc.anime_5: 1307413699
+      Jump.mc.anime_4: -95552669
+      Jump.mc.anime_7: 392644950
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
