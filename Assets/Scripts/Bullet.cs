@@ -7,6 +7,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public PlayerHealth health;
+    public EnemyHealth enemyHealth;
     public Transform player;
     public Rigidbody2D bulletRb;
     public float maxStamina = 10f;
@@ -81,7 +82,7 @@ public class Bullet : MonoBehaviour
                 transform.SetParent(player);
                 transform.localPosition = lightPlace;
 
-                if(currentStamina<= 0)
+                if (currentStamina <= 0)
                 {
                     health.TakeDamage(1);
                 }
@@ -107,9 +108,16 @@ public class Bullet : MonoBehaviour
             currentStamina -= staminDrain * Time.fixedDeltaTime;
             currentStamina = Mathf.Max(currentStamina, 0f);
         }
-        if(currentStamina<=0)
+        if (currentStamina <= 0)
         {
             isReturning = true;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            enemyHealth.TakeDamage(1);
         }
     }
 }

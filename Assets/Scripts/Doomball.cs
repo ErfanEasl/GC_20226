@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Doomball : MonoBehaviour
 {
+   public PlayerHealth health;
     public float speed = 6f;
     public float lifetime = 4f;
     public Animator animator; // optional: impact animation
@@ -76,5 +77,9 @@ public class Doomball : MonoBehaviour
     public void DestroySelf()
     {
         Destroy(gameObject);
+    }
+    private void FixedUpdate()
+    {
+        health.TakeDamage(1);
     }
 }
