@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 47205c1069c9fd84cbe95548dfab973f
+guid: 34f3767bd65d0e94296c7bfe86959de7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 42
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: the whisper.attack_0
+      name: the whisper.attack1_0
       rect:
         serializedVersion: 2
-        x: 170
-        y: 2582
-        width: 1166
-        height: 299
+        x: 25
+        y: 41
+        width: 362
+        height: 801
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0090da22bcc138e44929a85dceac5786
-      internalID: -1839248141
+      spriteID: 61d91f678e26354468a241376975789d
+      internalID: -161661170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: the whisper.attack_1
+      name: the whisper.attack1_1
       rect:
         serializedVersion: 2
-        x: 1410
-        y: 2580
-        width: 1246
-        height: 279
+        x: 573
+        y: 41
+        width: 367
+        height: 798
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e56bba6bbff73f14aa26ee99e77ca3a6
-      internalID: 108481641
+      spriteID: fe99205454ddb3e478ab59dc17570a66
+      internalID: -1846149404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: the whisper.attack_2
+      name: the whisper.attack1_2
       rect:
         serializedVersion: 2
-        x: 2820
-        y: 2559
-        width: 1134
-        height: 251
+        x: 1101
+        y: 39
+        width: 369
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,71 +175,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d66787978e2205468cb67accaee61c6
-      internalID: 585480751
+      spriteID: 959c09cf64e102d46b1ed6f4c67c8170
+      internalID: -175429135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: the whisper.attack_3
+      name: the whisper.attack1_3
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1806
-        width: 1113
-        height: 267
+        x: 1593
+        y: 37
+        width: 364
+        height: 805
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 627b164cc2234cb4c873672e200f1d4e
-      internalID: 1841902940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: the whisper.attack_4
-      rect:
-        serializedVersion: 2
-        x: 1465
-        y: 1714
-        width: 1208
-        height: 281
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4bbe0d20b566da469e404aafcf11725
-      internalID: 1490911726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: the whisper.attack_5
-      rect:
-        serializedVersion: 2
-        x: 2820
-        y: 1701
-        width: 1186
-        height: 266
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71a98efe1849d30499e75ad88b9067c1
-      internalID: 1974843463
+      spriteID: 4320bef0f5766e544a147c84b53bc365
+      internalID: 335876
       vertices: []
       indices: 
       edges: []
@@ -255,12 +213,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      the whisper.attack_2: 585480751
-      the whisper.attack_1: 108481641
-      the whisper.attack_0: -1839248141
-      the whisper.attack_4: 1490911726
-      the whisper.attack_3: 1841902940
-      the whisper.attack_5: 1974843463
+      the whisper.attack1_3: 335876
+      the whisper.attack1_0: -161661170
+      the whisper.attack1_1: -1846149404
+      the whisper.attack1_2: -175429135
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

@@ -25,9 +25,13 @@ public class Movment : MonoBehaviour
     {
 
         //Move
-        animator.SetFloat("Speed", Mathf.Abs(horizontal));
         horizontal = Input.GetAxisRaw("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
         rb.velocity = new Vector2(moveSpeed * horizontal, rb.velocity.y);
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        animator.SetBool("isRunning", horizontal != 0f);
+        Debug.Log("horizontal=" + horizontal + " | Speed in Animator=" + animator.GetFloat("Speed") + " | Animator object=" + animator.gameObject.name);
+
 
         //Jump
         animator.SetBool("isJumping", !IsGrounded());
@@ -68,7 +72,13 @@ public class Movment : MonoBehaviour
         }
     }
     private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireCube(transform.position - transform.up * Distance, boxSize);
-    }
+{
+    Gizmos.color = Color.yellow;
+
+    Gizmos.DrawWireCube(
+        transform.position - transform.up * Distance,
+        boxSize
+    );
+}
+
 }
