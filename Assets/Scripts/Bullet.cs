@@ -30,12 +30,14 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         lightPlace = transform.localPosition;
-        currentStamina = maxStamina;
     }
 
     // Update is called once per frame
     void Update()
     {
+        bulletLight.intensity = currentStamina/5;
+        bulletLight.pointLightInnerRadius = currentStamina;
+
         if (Input.GetKeyDown(KeyCode.RightShift) && !isShot)
         {
             transform.SetParent(null);
