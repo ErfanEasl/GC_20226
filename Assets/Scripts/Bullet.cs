@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public UnityEngine.Rendering.Universal.Light2D bulletLight;
     public PlayerHealth health;
     public EnemyHealth enemyHealth;
     public Transform player;
@@ -86,7 +87,7 @@ public class Bullet : MonoBehaviour
                 {
                     health.TakeDamage(1);
                 }
-
+                bulletLight.enabled = true;
                 currentStamina = maxStamina;
                 isShot = false;
                 isStopped = false;
@@ -111,6 +112,7 @@ public class Bullet : MonoBehaviour
         if (currentStamina <= 0)
         {
             isReturning = true;
+            bulletLight.enabled = false;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
