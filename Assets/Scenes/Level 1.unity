@@ -53751,7 +53751,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c54424f3d5f643045b5678958c6ea2e4, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -54631,9 +54631,9 @@ MonoBehaviour:
   maxStamina: 10
   currentStamina: 0
   staminDrain: 2
-  shootPower: 20
+  shootPower: 40
   playerSpeed: 15
-  slowDown: 7
+  slowDown: 35
   isShot: 0
   isStopped: 0
   isReturning: 0

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4509835478072170431}
   m_Layer: 0
   m_Name: Doomball
-  m_TagString: Untagged
+  m_TagString: DoomBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4509835478072170403
 SpriteRenderer:
@@ -141,6 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68b706345216d34b98f1dc81b5718b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 0}
   speed: 6
   lifetime: 4
   animator: {fileID: 4509835478072170402}

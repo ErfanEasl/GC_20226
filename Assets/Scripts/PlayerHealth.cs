@@ -15,12 +15,12 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
         Debug.Log(currentHealth);
         if (currentHealth <= 0)
@@ -31,5 +31,12 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Player Is Dead");
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("DoomBullet"))
+        {
+            TakeDamage(1);
+        }
     }
 }
