@@ -17,6 +17,7 @@ public class Checkpoint : MonoBehaviour
 
     private SpriteRenderer sr;
     private bool isLit;
+    public bool IsLit => isLit;
 
     void Awake()
     {

@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -19,26 +17,35 @@ public class Bullet : MonoBehaviour
     float returnSpeedBost = 2;
     public float slowDown = 5f;
 
-
     [SerializeField] bool isShot = false;
     [SerializeField] bool isStopped = false;
     [SerializeField] bool isReturning = false;
 
     private Vector3 lightPlace;
 
-    // Start is called before the first frame update
+    // Used by the checkpoint to know if the light has been thrown
+    public bool IsShot => isShot;
+
+    // Mouse click, E, or Right Shift
+    bool PressDown => Input.GetMouseButtonDown(0)
+                   || Input.GetKeyDown(KeyCode.E)
+                   || Input.GetKeyDown(KeyCode.RightShift);
+
+    bool Released => Input.GetMouseButtonUp(0)
+                  || Input.GetKeyUp(KeyCode.E)
+                  || Input.GetKeyUp(KeyCode.RightShift);
+
     void Start()
     {
         lightPlace = transform.localPosition;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        bulletLight.intensity = currentStamina/5;
+        bulletLight.intensity = currentStamina / 5;
         bulletLight.pointLightInnerRadius = currentStamina;
 
-        if (Input.GetKeyDown(KeyCode.RightShift) && !isShot)
+        if (PressDown && !isShot)
         {
             transform.SetParent(null);
             isShot = true;
@@ -55,11 +62,12 @@ public class Bullet : MonoBehaviour
                 bulletRb.velocity = Vector2.left * shootPower;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.RightShift) && isStopped && !isReturning)
+        else if (PressDown && isStopped && !isReturning)
         {
             isReturning = true;
         }
-        if (isReturning && Input.GetKeyUp(KeyCode.RightShift))
+
+        if (isReturning && Released)
         {
             isReturning = false;
             isStopped = true;
@@ -73,11 +81,13 @@ public class Bullet : MonoBehaviour
         {
             return;
         }
+
         if (isReturning)
         {
             Vector2 direction = ((Vector2)player.position - bulletRb.position).normalized;
             float returnSpeed = playerSpeed * returnSpeedBost;
             bulletRb.velocity = direction * returnSpeed;
+
             if (Vector2.Distance(bulletRb.position, player.position) < 0.2f)
             {
                 bulletRb.velocity = Vector2.zero;
@@ -96,7 +106,6 @@ public class Bullet : MonoBehaviour
                 isReturning = false;
             }
         }
-
         else if (!isStopped)
         {
             bulletRb.velocity = Vector2.MoveTowards(bulletRb.velocity, Vector2.zero, slowDown * Time.fixedDeltaTime);
@@ -106,17 +115,20 @@ public class Bullet : MonoBehaviour
                 isStopped = true;
             }
         }
+
         if (isStopped)
         {
             currentStamina -= staminDrain * Time.fixedDeltaTime;
             currentStamina = Mathf.Max(currentStamina, 0f);
         }
+
         if (currentStamina <= 0)
         {
             isReturning = true;
             bulletLight.enabled = false;
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
