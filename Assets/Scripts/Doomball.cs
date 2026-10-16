@@ -2,18 +2,14 @@ using UnityEngine;
 
 public class Doomball : MonoBehaviour
 {
-    public PlayerHealth health;
     public float speed = 6f;
     public float lifetime = 4f;
+    public int damage = 1;
     public Animator animator; // optional: impact animation
 
     private Vector2 direction;
     private bool hasHit = false;
 
-    public void Start()
-    {
-        health.GetComponent<PlayerHealth>();
-    }
     public void Launch(Vector2 dir)
     {
         direction = dir.normalized;
@@ -22,7 +18,6 @@ public class Doomball : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
         Destroy(gameObject, lifetime);
-        Debug.Log("[Doomball] Launched. Direction: " + direction + " | Speed: " + speed);
     }
 
     void Update()
@@ -35,14 +30,24 @@ public class Doomball : MonoBehaviour
     {
         if (hasHit) return;
 
-        Debug.Log("[Doomball] Touched: " + other.name + " (tag: " + other.tag + ")");
-
         // Never react to the enemy that shot it.
         if (other.GetComponentInParent<EnemyAI>() != null) return;
 
         if (other.CompareTag("Player"))
         {
-            Debug.Log("[Doomball] HIT THE PLAYER!");
+            // Find the health script on whatever we hit.
+            PlayerHealth playerHealth = other.GetComponentInParent<PlayerHealth>();
+
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damage);   // damage happens ONCE, here
+                Debug.Log("[Doomball] Hit the player for " + damage);
+            }
+            else
+            {
+                Debug.LogWarning("[Doomball] Hit the player but found no PlayerHealth script on it.");
+            }
+
             Impact();
         }
         else if (other.CompareTag("Ground"))
@@ -54,9 +59,10 @@ public class Doomball : MonoBehaviour
     void Impact()
     {
         hasHit = true;
-        GetComponent<Collider2D>().enabled = false;
 
-        // Only play the impact animation if the Animator really has a "Hit" trigger.
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+
         if (animator != null && HasHitTrigger())
         {
             animator.SetTrigger("Hit");
@@ -81,9 +87,5 @@ public class Doomball : MonoBehaviour
     public void DestroySelf()
     {
         Destroy(gameObject);
-    }
-    private void FixedUpdate()
-    {
-        health.TakeDamage(1);
     }
 }
