@@ -29,7 +29,7 @@ public class PlayerUi : MonoBehaviour
         {
             return;
 
-            lightStamina[lightNumber].fillAmount = staminaPercent;
+            
         }
     }
     public void LoseLight()
