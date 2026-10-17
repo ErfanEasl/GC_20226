@@ -16,18 +16,14 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentHealth <= 0 || Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-
+        Die();
     }
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
-        Debug.Log(currentHealth);
+        
         if (currentHealth <= 0)
         {
             Die();
@@ -35,7 +31,10 @@ public class PlayerHealth : MonoBehaviour
     }
     void Die()
     {
-        Debug.Log("Player Is Dead");
+        if (currentHealth <= 0 || Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
