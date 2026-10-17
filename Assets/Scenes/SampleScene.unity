@@ -1149,10 +1149,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 552583273, guid: 54baab747a21e8f4585ddc15adf756f8, type: 3}
-      propertyPath: lightStamina.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3958274501127734504, guid: 54baab747a21e8f4585ddc15adf756f8, type: 3}
       propertyPath: m_RootOrder
       value: 4
