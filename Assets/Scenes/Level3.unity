@@ -26940,7 +26940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b1ef9496e57f84b93567beed4fa878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 2120110258}
   parallaxEffect: 0.6
 --- !u!1 &770629723
 GameObject:
@@ -27320,11 +27320,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 87d27348b0f524046ae35fb163379cb2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -27503,7 +27503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b1ef9496e57f84b93567beed4fa878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 2120110258}
   parallaxEffect: 0.8
 --- !u!4 &1898066101 stripped
 Transform:
