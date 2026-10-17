@@ -886,6 +886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 604869868}
   - component: {fileID: 604869867}
+  - component: {fileID: 604869869}
   m_Layer: 7
   m_Name: IMG_9279
   m_TagString: Ground
@@ -960,6 +961,32 @@ Transform:
   m_Father: {fileID: 336212658}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &604869869
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604869866}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.6089115, y: 0.94719124}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 22.67742, y: 8.825149}
+    newSize: {x: 22.67742, y: 8.825149}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.776447, y: 2.059494}
+  m_EdgeRadius: 0
 --- !u!1 &733585669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,6 +1081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 808410215}
   - component: {fileID: 808410214}
+  - component: {fileID: 808410216}
   m_Layer: 7
   m_Name: IMG_9282 (3)
   m_TagString: Ground
@@ -1128,6 +1156,19 @@ Transform:
   m_Father: {fileID: 336212658}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &808410216
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808410213}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.197136, y: 6.8004837, z: 0.2}
+  m_Center: {x: 0.038936615, y: -0.15574455, z: 0}
 --- !u!1001 &864022161
 PrefabInstance:
   m_ObjectHideFlags: 0
