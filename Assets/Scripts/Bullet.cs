@@ -6,12 +6,14 @@ public class Bullet : MonoBehaviour
 {
     public UnityEngine.Rendering.Universal.Light2D bulletLight;
     public PlayerHealth health;
+    public PlayerUi ui;
     public EnemyHealth enemyHealth;
     public Transform player;
     public Rigidbody2D bulletRb;
     public float maxStamina = 10f;
     public float currentStamina;
     public float staminDrain = 1f;
+    public float staminCharger = 1f;
     public float shootPower = 5f;
     public float playerSpeed = 5;
     float returnSpeedBost = 2;
@@ -20,6 +22,8 @@ public class Bullet : MonoBehaviour
     [SerializeField] bool isShot = false;
     [SerializeField] bool isStopped = false;
     [SerializeField] bool isReturning = false;
+
+    [SerializeField] bool isRecharging = false;
 
     private Vector3 lightPlace;
 
@@ -38,6 +42,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         lightPlace = transform.localPosition;
+        currentStamina = maxStamina;
     }
 
     void Update()
@@ -45,7 +50,7 @@ public class Bullet : MonoBehaviour
         bulletLight.intensity = currentStamina / 5;
         bulletLight.pointLightInnerRadius = currentStamina;
 
-        if (PressDown && !isShot)
+        if (PressDown && !isShot && !isRecharging && currentStamina >= maxStamina)
         {
             transform.SetParent(null);
             isShot = true;
@@ -77,6 +82,19 @@ public class Bullet : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (isRecharging)
+        {
+            currentStamina = Mathf.MoveTowards(currentStamina, maxStamina, staminCharger * Time.fixedDeltaTime);
+            if (currentStamina >= maxStamina)
+            {
+                isRecharging = false;
+                if (bulletLight != null)
+                {
+                    bulletLight.enabled = true;
+                }
+            }
+        }
+
         if (!isShot)
         {
             return;
@@ -97,10 +115,22 @@ public class Bullet : MonoBehaviour
 
                 if (currentStamina <= 0)
                 {
-                    health.TakeDamage(1);
+                    isRecharging = true;
                 }
-                bulletLight.enabled = true;
-                currentStamina = maxStamina;
+                else
+                {
+                    currentStamina = maxStamina;
+                    if (ui != null)
+                    {
+                        ui.UpdateStamina(1f);
+
+                        if (bulletLight != null)
+                        {
+                            bulletLight.enabled = true;
+                        }
+                    }
+                }
+
                 isShot = false;
                 isStopped = false;
                 isReturning = false;
@@ -120,6 +150,12 @@ public class Bullet : MonoBehaviour
         {
             currentStamina -= staminDrain * Time.fixedDeltaTime;
             currentStamina = Mathf.Max(currentStamina, 0f);
+
+            if (ui != null)
+            {
+                float staminaPercent = currentStamina / maxStamina;
+                ui.UpdateStamina(staminaPercent);
+            }
         }
 
         if (currentStamina <= 0)

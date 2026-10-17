@@ -147,7 +147,7 @@ Transform:
   m_Children:
   - {fileID: 3958274501698860931}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3958274501127734505
 SpriteRenderer:
@@ -413,7 +413,7 @@ MonoBehaviour:
   staminDrain: 2
   shootPower: 100
   playerSpeed: 30
-  slowDown: 280
+  slowDown: 170
   isShot: 0
   isStopped: 0
   isReturning: 0

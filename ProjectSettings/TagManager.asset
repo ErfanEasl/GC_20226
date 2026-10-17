@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Ground
+  - PlayerFire
   layers:
   - Default
   - TransparentFX
@@ -73,6 +74,12 @@ TagManager:
   - name: Player
     uniqueID: 3188527379
     locked: 0
+  - name: Outer_Ground
+    uniqueID: 2649428353
+    locked: 0
   - name: light
     uniqueID: 3964808019
+    locked: 0
+  - name: UI
+    uniqueID: 258637453
     locked: 0
