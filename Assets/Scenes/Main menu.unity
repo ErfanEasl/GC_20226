@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0e00023fe5ed974e8323e4fa833f0bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLevelName: Level1
+  firstLevelName: Intro
   clickSound: {fileID: 0}
 --- !u!4 &230119483
 Transform:
