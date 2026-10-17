@@ -269,7 +269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: 3958274501127734503}
   lightStamina:
-  - {fileID: 0}
+  - {fileID: 4618279922445423547}
   - {fileID: 495102398}
   - {fileID: 515779793}
   lightNumber: 0
