@@ -1272,6 +1272,7 @@ MonoBehaviour:
   isStopped: 0
   isReturning: 0
   isRecharging: 0
+  LightFader: 0
 --- !u!50 &3958274501698860930
 Rigidbody2D:
   serializedVersion: 4

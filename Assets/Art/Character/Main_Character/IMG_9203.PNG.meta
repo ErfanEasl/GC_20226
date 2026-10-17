@@ -1,0 +1,422 @@
+fileFormatVersion: 2
+guid: 3174c3cb916f8e14da301fc4760b3d46
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IMG_9203_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 858
+        width: 365
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f777e3b02574b047878a25f01156dea
+      internalID: 941099970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_9203_9
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 881
+        width: 336
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be73e99c73199934085fe9acbe864054
+      internalID: 1417858931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_9203_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 884
+        width: 384
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac957a859ad2eb446a822ec5fa50b855
+      internalID: -1530199270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_9203_21
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 857
+        width: 354
+        height: 558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d270292aa9b7ed44b21e324d203c3e6
+      internalID: -1975431226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_9203_23
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 865
+        width: 352
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb13c9bf390be249b322ccc0bbd3ff2
+      internalID: 1546406323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_9203_24
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 899
+        width: 354
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb8df53c3cec724ab3d54e4961f638f
+      internalID: 459737852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_9203_26
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 864
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337531cb28aa26a4b9414ff17690c144
+      internalID: 1091769445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_9203_28
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 893
+        width: 344
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536597c78dc0b5141a167427f0432bc8
+      internalID: -362362261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      IMG_9203_94: -1260105131
+      IMG_9203_63: 1622828846
+      IMG_9203_11: -934626166
+      IMG_9203_2: 721143551
+      IMG_9203_96: 1936246994
+      IMG_9203_60: 113051474
+      IMG_9203_110: -1854481767
+      IMG_9203_87: -947780658
+      IMG_9203_13: -2076879948
+      IMG_9203_6: 1503862788
+      IMG_9203_43: 1272861128
+      IMG_9203_92: 20172152
+      IMG_9203_105: -1558912236
+      IMG_9203_116: 333026584
+      IMG_9203_56: -735404118
+      IMG_9203_93: -244008871
+      IMG_9203_39: 1645876797
+      IMG_9203_1: -96224771
+      IMG_9203_5: -1126592658
+      IMG_9203_100: 629565778
+      IMG_9203_114: 2060300178
+      IMG_9203_86: -1456575991
+      IMG_9203_113: -1075209429
+      IMG_9203_36: 187883690
+      IMG_9203_19: 1616774902
+      IMG_9203_35: -1657082269
+      IMG_9203_47: 1205908020
+      IMG_9203_117: 1334255010
+      IMG_9203_58: -1069015018
+      IMG_9203_74: -1192756943
+      IMG_9203_3: -654483323
+      IMG_9203_12: -256503268
+      IMG_9203_68: -1037417258
+      IMG_9203_17: 77785578
+      IMG_9203_108: -134689680
+      IMG_9203_52: -709302679
+      IMG_9203_15: -2031656794
+      IMG_9203_84: -1559249756
+      IMG_9203_85: 632831271
+      IMG_9203_53: 1530753620
+      IMG_9203_65: 1970184726
+      IMG_9203_31: 439836226
+      IMG_9203_104: -1008172123
+      IMG_9203_73: 426738253
+      IMG_9203_14: 1844267021
+      IMG_9203_83: -1961059723
+      IMG_9203_10: -1530199270
+      IMG_9203_69: 1471286516
+      IMG_9203_16: 1676067821
+      IMG_9203_40: -1991764964
+      IMG_9203_44: 1607416598
+      IMG_9203_18: 1652162719
+      IMG_9203_101: -1092048514
+      IMG_9203_33: -992641527
+      IMG_9203_45: -1156236413
+      IMG_9203_81: -1247878362
+      IMG_9203_91: -727641799
+      IMG_9203_0: 1571294619
+      IMG_9203_75: -9932604
+      IMG_9203_28: -362362261
+      IMG_9203_67: -1680255981
+      IMG_9203_103: 1093498408
+      IMG_9203_109: 183280817
+      IMG_9203_46: 1220394896
+      IMG_9203_77: 1554298903
+      IMG_9203_20: -1007065742
+      IMG_9203_25: -2112230006
+      IMG_9203_71: 974215815
+      IMG_9203_9: 1417858931
+      IMG_9203_23: 1546406323
+      IMG_9203_78: -993678986
+      IMG_9203_24: 459737852
+      IMG_9203_98: -156848943
+      IMG_9203_99: 59236675
+      IMG_9203_55: 407126177
+      IMG_9203_82: -1486266403
+      IMG_9203_27: -1257192445
+      IMG_9203_111: 1453374645
+      IMG_9203_32: -821249275
+      IMG_9203_97: -2035682387
+      IMG_9203_106: -1809322464
+      IMG_9203_21: -1975431226
+      IMG_9203_4: 941099970
+      IMG_9203_115: 130660868
+      IMG_9203_41: 667153838
+      IMG_9203_88: -1307661166
+      IMG_9203_49: -1873639942
+      IMG_9203_26: 1091769445
+      IMG_9203_66: 42059620
+      IMG_9203_42: 1822865451
+      IMG_9203_30: 1120176150
+      IMG_9203_51: 2139617459
+      IMG_9203_90: -980340692
+      IMG_9203_48: -549052598
+      IMG_9203_95: -787051377
+      IMG_9203_102: 397781982
+      IMG_9203_70: 1626977572
+      IMG_9203_76: -306868261
+      IMG_9203_80: 838153324
+      IMG_9203_107: 1205249534
+      IMG_9203_112: -1774491064
+      IMG_9203_29: 1406102160
+      IMG_9203_8: -997347526
+      IMG_9203_37: 1111445906
+      IMG_9203_61: -1210361771
+      IMG_9203_59: -149479393
+      IMG_9203_54: -228092832
+      IMG_9203_72: -182861818
+      IMG_9203_50: -1902194046
+      IMG_9203_62: -1948189181
+      IMG_9203_22: 1344656190
+      IMG_9203_7: -1188883214
+      IMG_9203_64: 1812059091
+      IMG_9203_57: 1594808484
+      IMG_9203_79: -63376229
+      IMG_9203_34: -690963665
+      IMG_9203_38: -338252735
+      IMG_9203_89: -1942293396
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
