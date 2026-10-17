@@ -8,12 +8,18 @@ public class Bullet : MonoBehaviour
     public PlayerHealth health;
     public PlayerUi ui;
     public EnemyHealth enemyHealth;
+
+
     public Transform player;
     public Rigidbody2D bulletRb;
+
+
     public float maxStamina = 10f;
     public float currentStamina;
     public float staminDrain = 1f;
     public float staminCharger = 1f;
+
+
     public float shootPower = 5f;
     public float playerSpeed = 5;
     float returnSpeedBost = 2;
@@ -22,8 +28,8 @@ public class Bullet : MonoBehaviour
     [SerializeField] bool isShot = false;
     [SerializeField] bool isStopped = false;
     [SerializeField] bool isReturning = false;
-
     [SerializeField] bool isRecharging = false;
+    [SerializeField] bool LightFader = false;
 
     private Vector3 lightPlace;
 
@@ -43,20 +49,30 @@ public class Bullet : MonoBehaviour
     {
         lightPlace = transform.localPosition;
         currentStamina = maxStamina;
+        if (ui != null)
+        {
+            ui.UpdateStamina(1f);
+        }
     }
 
     void Update()
     {
-        bulletLight.intensity = currentStamina / 5;
-        bulletLight.pointLightInnerRadius = currentStamina;
+        if (bulletLight != null)
+        {
+            bulletLight.intensity = currentStamina / 5;
+            bulletLight.pointLightInnerRadius = currentStamina;
+        }
 
-        if (PressDown && !isShot && !isRecharging && currentStamina >= maxStamina)
+
+        if (PressDown && !isShot && !isRecharging && currentStamina >= maxStamina && (ui != null || ui.hasLight))
         {
             transform.SetParent(null);
-            isShot = true;
 
+            isShot = true;
             isReturning = false;
             isStopped = false;
+            LightFader = false;
+
             float yRocation = player.eulerAngles.y;
             if (yRocation < 90f || yRocation > 270f)
             {
@@ -72,7 +88,7 @@ public class Bullet : MonoBehaviour
             isReturning = true;
         }
 
-        if (isReturning && Released)
+        if (isReturning && Released && currentStamina > 0)
         {
             isReturning = false;
             isStopped = true;
@@ -91,6 +107,10 @@ public class Bullet : MonoBehaviour
                 if (bulletLight != null)
                 {
                     bulletLight.enabled = true;
+                    if (ui != null && ui.hasLight)
+                    {
+                        ui.UpdateStamina(1f);
+                    }
                 }
             }
         }
@@ -106,12 +126,16 @@ public class Bullet : MonoBehaviour
             float returnSpeed = playerSpeed * returnSpeedBost;
             bulletRb.velocity = direction * returnSpeed;
 
-            if (Vector2.Distance(bulletRb.position, player.position) < 0.2f)
+            if (Vector2.Distance(bulletRb.position, player.position) < 0.5f)
             {
                 bulletRb.velocity = Vector2.zero;
 
                 transform.SetParent(player);
                 transform.localPosition = lightPlace;
+
+                isShot = false;
+                isStopped = false;
+                isReturning = false;
 
                 if (currentStamina <= 0)
                 {
@@ -120,7 +144,7 @@ public class Bullet : MonoBehaviour
                 else
                 {
                     currentStamina = maxStamina;
-                    if (ui != null)
+                    if (ui != null && ui.hasLight)
                     {
                         ui.UpdateStamina(1f);
 
@@ -129,6 +153,7 @@ public class Bullet : MonoBehaviour
                             bulletLight.enabled = true;
                         }
                     }
+                    return;
                 }
 
                 isShot = false;
@@ -136,7 +161,7 @@ public class Bullet : MonoBehaviour
                 isReturning = false;
             }
         }
-        else if (!isStopped)
+        if (!isStopped)
         {
             bulletRb.velocity = Vector2.MoveTowards(bulletRb.velocity, Vector2.zero, slowDown * Time.fixedDeltaTime);
             if (bulletRb.velocity.magnitude < 0.05f)
@@ -144,7 +169,9 @@ public class Bullet : MonoBehaviour
                 bulletRb.velocity = Vector2.zero;
                 isStopped = true;
             }
+            return;
         }
+
 
         if (isStopped)
         {
@@ -158,9 +185,18 @@ public class Bullet : MonoBehaviour
             }
         }
 
-        if (currentStamina <= 0)
+        if (currentStamina <= 0f && !LightFader)
         {
+            LightFader = true;
+
+            if (ui != null)
+            {
+                ui.LoseLight();
+            }
             isReturning = true;
+        }
+        if (bulletLight != null && currentStamina <= 0)
+        {
             bulletLight.enabled = false;
         }
     }
