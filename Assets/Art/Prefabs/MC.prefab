@@ -1002,7 +1002,7 @@ Transform:
   - {fileID: 3958274501698860931}
   - {fileID: 552583272}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3958274501127734505
 SpriteRenderer:
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 30
-  currentHealth: 0
+  currentHealth: 1
 --- !u!61 &3958274501127734497
 BoxCollider2D:
   m_ObjectHideFlags: 0
