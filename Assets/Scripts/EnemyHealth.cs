@@ -26,9 +26,9 @@ public class EnemyHealth : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Lightseeker"))
+        if (collision.CompareTag("PlayerFire"))
         {
-            TakeDamage(health);
+            TakeDamage(1);
         }
     }
 }
