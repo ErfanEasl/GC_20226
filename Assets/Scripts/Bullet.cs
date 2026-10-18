@@ -59,8 +59,8 @@ public class Bullet : MonoBehaviour
     {
         if (PauseMenu.IsPaused) return;
 
-        bulletLight.intensity = currentStamina/5;
-        
+        bulletLight.intensity = currentStamina / 5;
+
         if (bulletLight != null)
         {
             bulletLight.intensity = currentStamina / 5;
@@ -105,17 +105,15 @@ public class Bullet : MonoBehaviour
         if (isRecharging)
         {
             currentStamina = Mathf.MoveTowards(currentStamina, maxStamina, staminCharger * Time.fixedDeltaTime);
+            if (ui != null && ui.hasLight)
+                ui.UpdateStamina(currentStamina / maxStamina);
+            if (bulletLight != null)
+            {
+                bulletLight.enabled = true;
+            }
             if (currentStamina >= maxStamina)
             {
                 isRecharging = false;
-                if (bulletLight != null)
-                {
-                    bulletLight.enabled = true;
-                    if (ui != null && ui.hasLight)
-                    {
-                        ui.UpdateStamina(1f);
-                    }
-                }
             }
         }
 

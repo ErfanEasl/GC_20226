@@ -43,6 +43,9 @@ public class PlayerUi : MonoBehaviour
         if (lightNumber >= lightStamina.Length)
         {
             health.Die();
+            return;
         }
+        lightStamina[lightNumber].enabled = true;
+        lightStamina[lightNumber].fillAmount = 1f;
     }
 }
