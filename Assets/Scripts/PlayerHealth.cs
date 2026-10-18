@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Die();
+       
     }
     public void TakeDamage(float damage)
     {
@@ -24,17 +24,14 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
         
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 || Input.GetKeyDown(KeyCode.R))
         {
             Die();
         }
     }
-    void Die()
+   public void Die()
     {
-        if (currentHealth <= 0 || Input.GetKeyDown(KeyCode.R))
-        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {

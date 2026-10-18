@@ -30,7 +30,7 @@ public class PlayerUi : MonoBehaviour
         if (!hasLight)
             return;
 
-            lightStamina[lightNumber].fillAmount = Mathf.Clamp01(staminaPercent);
+        lightStamina[lightNumber].fillAmount = Mathf.Clamp01(staminaPercent);
 
     }
     public void LoseLight()
@@ -40,5 +40,9 @@ public class PlayerUi : MonoBehaviour
         lightStamina[lightNumber].fillAmount = 0f;
         lightStamina[lightNumber].enabled = false;
         lightNumber++;
+        if (lightNumber >= lightStamina.Length)
+        {
+            health.Die();
+        }
     }
 }
