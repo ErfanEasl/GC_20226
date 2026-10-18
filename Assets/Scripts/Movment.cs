@@ -30,8 +30,10 @@ public class Movment : MonoBehaviour
         rb.velocity = new Vector2(moveSpeed * horizontal, rb.velocity.y);
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
         animator.SetBool("isRunning", horizontal != 0f);
-        Debug.Log("horizontal=" + horizontal + " | Speed in Animator=" + animator.GetFloat("Speed") + " | Animator object=" + animator.gameObject.name);
-
+        //Debug.Log("horizontal=" + horizontal + " | Speed in Animator=" + animator.GetFloat("Speed") + " | Animator object=" + animator.gameObject.name);
+        
+        if (PauseMenu.IsPaused) return;
+        horizontal = Input.GetAxisRaw("Horizontal");
 
         //Jump
         animator.SetBool("isJumping", !IsGrounded());

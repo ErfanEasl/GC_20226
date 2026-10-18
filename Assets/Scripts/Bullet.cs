@@ -57,6 +57,10 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
+        if (PauseMenu.IsPaused) return;
+
+        bulletLight.intensity = currentStamina/5;
+        
         if (bulletLight != null)
         {
             bulletLight.intensity = currentStamina / 5;
