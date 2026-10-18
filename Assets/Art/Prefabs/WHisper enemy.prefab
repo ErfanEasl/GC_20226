@@ -173,9 +173,9 @@ MonoBehaviour:
   animator: {fileID: 7923594909968703688}
   firePoint: {fileID: 7923594910218929742}
   doomballPrefab: {fileID: 4509835478072170430, guid: 857eb97d343d53e4e9c85fe888a3b626, type: 3}
-  detectionRange: 22
+  detectionRange: 20
   attackRange: 10
-  moveSpeed: 12
+  moveSpeed: 13
   attackCooldown: 5
   useAnimationEvents: 0
   shootDelay: 0.5
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adea5cf9f1cea8b4f8b6246f8fec936a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 4
+  health: 2
 --- !u!1 &7923594910218929743
 GameObject:
   m_ObjectHideFlags: 0
