@@ -5,6 +5,8 @@ using UnityEngine.Video;
 public class IntroCutscene : MonoBehaviour
 {
     [SerializeField] private VideoPlayer videoPlayer;
+    [Tooltip("-1 = load the next scene. 0 = go back to the main menu.")]
+    [SerializeField] private int sceneIndexOverride = -1;
 
     void Start()
     {
@@ -13,7 +15,10 @@ public class IntroCutscene : MonoBehaviour
 
     void OnVideoEnd(VideoPlayer vp)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int target = sceneIndexOverride >= 0
+            ? sceneIndexOverride
+            : SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(target);
     }
 
     void OnDestroy()
