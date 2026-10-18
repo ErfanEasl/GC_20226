@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstLevelName: Intro
-  clickSound: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: a5bb36426c118294e9b964127364dda6, type: 3}
 --- !u!4 &230119483
 Transform:
   m_ObjectHideFlags: 0
