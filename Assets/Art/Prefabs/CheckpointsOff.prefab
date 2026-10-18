@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 7291594302770986517}
   - component: {fileID: 7291594302770986514}
   - component: {fileID: 7291594302770986519}
+  - component: {fileID: 1825744438130004406}
   m_Layer: 0
   m_Name: CheckpointsOff
   m_TagString: Untagged
@@ -236,6 +237,63 @@ MonoBehaviour:
   lightSound: {fileID: 8300000, guid: 92acab3a73978324ba4cc6ec88a0b1c9, type: 3}
   lightVolume: 1
   requireThrownLight: 1
+  respawnPoint: {fileID: 0}
+  loadsNextLevel: 1
   loadDelay: 2
   useNextBuildIndex: 1
   nextSceneName: Level2
+  onLit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1825744438130004406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7291594302770986515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000003b3d9780f99fdad0dba45a7ac7d392c165aa22a8fbeba38b6504c257f9feb5ae6d1893b413110dbe8111eb9d532b52ec8d7e6a0f
+  m_ShapePath:
+  - {x: -1.1205025, y: -3.0669556, z: 0}
+  - {x: -1.0787392, y: -2.8962593, z: 0}
+  - {x: -0.8504791, y: -2.6758385, z: 0}
+  - {x: -0.9377289, y: -2.481022, z: 0}
+  - {x: -0.7644234, y: -2.2557373, z: 0}
+  - {x: -0.85107803, y: 0.25715637, z: 0}
+  - {x: -0.72976303, y: 0.6557503, z: 0}
+  - {x: -1.1803513, y: 0.933033, z: 0}
+  - {x: -0.85107803, y: 0.9157028, z: 0}
+  - {x: -0.625782, y: 1.2449799, z: 0}
+  - {x: -0.26184845, y: 1.4702721, z: 0}
+  - {x: -0.22734833, y: 1.9174576, z: 0}
+  - {x: -0.7746239, y: 2.332058, z: 0}
+  - {x: -1.1678543, y: 2.979992, z: 0}
+  - {x: 1.1512718, y: 2.9302406, z: 0}
+  - {x: 0.92113113, y: 2.4019966, z: 0}
+  - {x: 0.20070267, y: 1.8832855, z: 0}
+  - {x: 0.25806046, y: 1.4182816, z: 0}
+  - {x: 0.5700073, y: 1.2449799, z: 0}
+  - {x: 0.77796936, y: 0.95036316, z: 0}
+  - {x: 1.1419067, y: 0.9157028, z: 0}
+  - {x: 0.8126335, y: 0.7077408, z: 0}
+  - {x: 0.639328, y: 0.43045425, z: 0}
+  - {x: 0.77796555, y: 0.20516205, z: 0}
+  - {x: 0.6913185, y: -2.082428, z: 0}
+  - {x: 0.91661453, y: -2.4116974, z: 0}
+  - {x: 0.8150215, y: -2.7104988, z: 0}
+  - {x: 1.0205956, y: -2.896946, z: 0}
+  - {x: 0.9932213, y: -3.062767, z: 0}
+  m_ShapePathHash: -569789969
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -89448
